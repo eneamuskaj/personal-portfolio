@@ -48,7 +48,12 @@ a {
   border-radius: 50%;
 }
 .containerChild {
-  background-color: rgba(139, 139, 139, 0.472);
+  background-color: rgba(139, 139, 139, 0.096);
+  border-radius: 5%;
+}
+.containerChild:hover {
+  background-color: rgba(139, 139, 139, 0.459);
+  color: rgb(255, 0, 0);
 }
 .containerChild > a {
   display: block;
@@ -74,9 +79,7 @@ a > img {
 a > img:hover {
   cursor: pointer;
 }
-.containerChild:hover {
-  color: rgb(255, 0, 0);
-}
+
 .profileDescs {
   display: flex;
   flex-direction: column;
@@ -115,7 +118,7 @@ a > img:hover {
 }
 #projects > h2 {
   font-size: 30px;
-  margin-left: 3%;
+  margin-left: 7%;
 }
 .navBar {
   position: fixed;
@@ -143,7 +146,9 @@ a > img:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 20px;
+  grid-gap: 100px;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 
 #contact {
