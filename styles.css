@@ -1,0 +1,245 @@
+body,
+html {
+  height: 100%;
+  color: white;
+  font-family: "M PLUS 1 Code", sans-serif;
+  font-weight: 800;
+  background-color: black;
+}
+
+p {
+  font-weight: 300;
+}
+ul {
+  background-color: rgb(63, 62, 62);
+  box-sizing: border-box;
+  list-style-type: none;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 1%;
+}
+li {
+  padding-left: 20px;
+  padding-right: 20px;
+  list-style-type: none;
+  color: white;
+  list-style-type: none;
+  float: right;
+  font-size: 30px;
+}
+.li {
+  float: left;
+}
+
+a:hover {
+  color: red;
+}
+
+a {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: rgb(255, 255, 255);
+  text-decoration-color: rgb(255, 255, 255);
+}
+.profilePicture > img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+}
+.containerChild {
+  background-color: rgba(139, 139, 139, 0.472);
+}
+.containerChild > a {
+  display: block;
+  text-align: center;
+}
+.containerChild > p {
+  text-align: center;
+  font-size: 16px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+a > img {
+  padding: 10px;
+  padding-right: 5px;
+  width: 500px;
+  height: 500px;
+  border-radius: 2%;
+  max-width: 95%;
+  max-height: 95%;
+  height: auto;
+}
+a > img:hover {
+  cursor: pointer;
+}
+.containerChild:hover {
+  color: rgb(255, 0, 0);
+}
+.profileDescs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 44px;
+  animation-name: profileAnimation;
+  animation-duration: 4s;
+}
+
+@keyframes profileAnimation {
+  0% {
+    color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    color: rgb(255, 255, 255);
+  }
+}
+
+.name {
+  animation-name: profileAnimation2;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+}
+@keyframes profileAnimation2 {
+  0% {
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    color: rgb(255, 0, 0);
+  }
+}
+
+.profileDescs > * {
+  margin: 0;
+  padding-left: 10px;
+}
+#projects > h2 {
+  font-size: 30px;
+  margin-left: 3%;
+}
+.navBar {
+  position: fixed;
+  top: 0;
+  width: 94%;
+  margin-top: 0;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#introduction {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 40px;
+  margin-top: 16%;
+  margin-bottom: 16%;
+}
+#projects {
+  margin-top: 10%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+#contact {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.colorful {
+  background-image: linear-gradient(270deg, #ff0000, #0035ff, #19ff00, #ff00f9);
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+
+  -webkit-animation: AnimationName 9s ease infinite;
+  -moz-animation: AnimationName 9s ease infinite;
+  animation: AnimationName 9s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .li {
+    float: none;
+  }
+  li {
+    float: none;
+  }
+  .navBar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #introduction {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+  #contact {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .profilePicture > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 19%;
+  }
+}
