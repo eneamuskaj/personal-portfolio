@@ -116,10 +116,26 @@ a > img:hover {
   margin: 0;
   padding-left: 10px;
 }
+
 #projects > h2 {
   font-size: 30px;
   margin-left: 7%;
 }
+
+.dash {
+  animation-name: profileAnimation3;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes profileAnimation3 {
+  0% {
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    color: rgb(255, 0, 0);
+  }
+}
+
 .navBar {
   position: fixed;
   top: 0;
