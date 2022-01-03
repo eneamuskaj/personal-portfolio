@@ -1,5 +1,7 @@
-body,
 html {
+  height: 100%;
+}
+body {
   height: 100%;
   color: white;
   font-family: "M PLUS 1 Code", sans-serif;
@@ -42,6 +44,24 @@ a {
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
 }
+#nightModeIcon1 {
+  width: 20px;
+}
+#nightModeIcon2 {
+  width: 20px;
+}
+#nightModeButton {
+  border: 0;
+  color: white;
+  background-color: white;
+  border-radius: 25%;
+  padding: 7px;
+  border: 3px solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+#nightModeButton:hover {
+  border: 3px solid black;
+}
 .profilePicture > img {
   height: 300px;
   width: 300px;
@@ -50,13 +70,13 @@ a {
 .containerChild {
   background-color: rgba(139, 139, 139, 0.096);
   border-radius: 10px;
-  border: 4px solid #ff0024bf;
+  border: 4px solid #b4b4b4;
   padding-top: 20px;
 }
 .containerChild:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(255, 0, 0);
-  border: 4px solid white;
+  border: 4px solid #ff0024bf;
 }
 
 .containerChild > a {
@@ -195,6 +215,9 @@ a > img:hover {
   margin-right: 6px;
   padding: 0;
 }
+.socialHeader {
+  color: red;
+}
 .socials:hover {
   background-color: white;
 }
@@ -284,4 +307,37 @@ a > img:hover {
     height: 200px;
     border-radius: 19%;
   }
+  #nightModeButton {
+    margin-top: 10px;
+  }
+}
+/* dark mode classes */
+.dark-mode {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.dark-mode2 {
+  border-color: white;
+  background-color: rgb(255, 255, 255);
+  border-color: lightsteelblue;
+}
+.dark-mode2:hover {
+  border-color: white;
+  background-color: rgb(213, 224, 238);
+}
+.dark-mode3 {
+  background-color: white;
+}
+.dark-mode3:hover {
+  background-color: lightsteelblue;
+}
+.dark-mode4 {
+  color: black;
+}
+
+.dark-mode5 {
+  background-color: rgba(176, 196, 222, 0.747);
+}
+.dark-mode6 {
+  color: lightsteelblue;
 }
