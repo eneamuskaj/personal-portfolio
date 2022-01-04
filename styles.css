@@ -3,10 +3,10 @@ html {
 }
 body {
   height: 100%;
-  color: white;
+  color: #c1c1c1;
   font-family: "M PLUS 1 Code", sans-serif;
   font-weight: 800;
-  background-color: black;
+  background-color: #121212;
 }
 
 p {
@@ -25,7 +25,6 @@ li {
   padding-left: 20px;
   padding-right: 20px;
   list-style-type: none;
-  color: white;
   list-style-type: none;
   float: right;
   font-size: 30px;
@@ -35,11 +34,11 @@ li {
 }
 
 a:hover {
-  color: red;
+  color: #5e7eb1;
 }
 
 a {
-  color: white;
+  color: #c1c1c1;
   background-color: rgba(0, 0, 0, 0);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
@@ -53,14 +52,14 @@ a {
 #nightModeButton {
   border: 0;
   color: white;
-  background-color: white;
+  background-color: #5e7eb1;
   border-radius: 25%;
   padding: 7px;
-  border: 3px solid rgb(255, 255, 255);
+  border: 3px solid #5e7eb1;
   cursor: pointer;
 }
 #nightModeButton:hover {
-  border: 3px solid black;
+  border: 3px solid #e9e9e9;
 }
 .profilePicture > img {
   height: 300px;
@@ -68,15 +67,14 @@ a {
   border-radius: 50%;
 }
 .containerChild {
-  background-color: rgba(139, 139, 139, 0.096);
+  background-color: #2f2f2f;
   border-radius: 10px;
-  border: 4px solid #b4b4b4;
+  border: 4px solid #1e1e1e;
   padding-top: 20px;
 }
 .containerChild:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(255, 0, 0);
-  border: 4px solid #ff0024bf;
+  background-color: #444d67;
+  color: #c1c3c9;
 }
 
 .containerChild > a {
@@ -100,6 +98,7 @@ a > img {
   max-height: 95%;
   height: auto;
   border-radius: 5%;
+  filter: brightness(0.8) contrast(1.2);
 }
 a > img:hover {
   cursor: pointer;
@@ -168,6 +167,8 @@ a > img:hover {
   margin-top: 0;
   margin-left: 3%;
   margin-right: 3%;
+  z-index: 2;
+  color: #c1c1c1;
 }
 
 #introduction {
@@ -204,22 +205,23 @@ a > img:hover {
   align-items: center;
   font-size: 30px;
   margin-top: 10%;
+  margin-bottom: 10%;
   text-align: center;
 }
 .socials {
   width: 70px;
   height: 70px;
-  background-color: red;
+  background-color: #c1c1c1;
   border-radius: 25%;
   margin-left: 6px;
   margin-right: 6px;
   padding: 0;
 }
 .socialHeader {
-  color: red;
+  color: #5e7eb1;
 }
 .socials:hover {
-  background-color: white;
+  background-color: #5e7eb1;
 }
 
 #contact {
@@ -319,11 +321,13 @@ a > img:hover {
 .dark-mode2 {
   border-color: white;
   background-color: rgb(255, 255, 255);
-  border-color: lightsteelblue;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .dark-mode2:hover {
+  color: black;
   border-color: white;
-  background-color: rgb(213, 224, 238);
+  background-color: white;
+  box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .dark-mode3 {
   background-color: white;
@@ -339,5 +343,8 @@ a > img:hover {
   background-color: rgba(176, 196, 222, 0.747);
 }
 .dark-mode6 {
-  color: lightsteelblue;
+  color: #528cd6;
+}
+.dark-mode7 {
+  filter: initial;
 }
