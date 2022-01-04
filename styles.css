@@ -3,6 +3,7 @@ html {
 }
 body {
   height: 100%;
+  margin: 0;
   color: #c1c1c1;
   font-family: "M PLUS 1 Code", sans-serif;
   font-weight: 800;
@@ -35,6 +36,7 @@ li {
 
 a:hover {
   color: #5e7eb1;
+  transition: 0.3s;
 }
 
 a {
@@ -42,6 +44,7 @@ a {
   background-color: rgba(0, 0, 0, 0);
   text-decoration: rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
+  transition: 0.3s;
 }
 #nightModeIcon1 {
   width: 20px;
@@ -57,9 +60,11 @@ a {
   padding: 7px;
   border: 3px solid #5e7eb1;
   cursor: pointer;
+  transition: 0.3s;
 }
 #nightModeButton:hover {
   border: 3px solid #e9e9e9;
+  transition: 0.3s;
 }
 .profilePicture > img {
   height: 300px;
@@ -71,10 +76,15 @@ a {
   border-radius: 10px;
   border: 4px solid #1e1e1e;
   padding-top: 20px;
+  transition: 0.3s;
 }
 .containerChild:hover {
   background-color: #444d67;
   color: #c1c3c9;
+  box-shadow: 0 4px 8px 0 rgba(204, 204, 204, 0.2),
+    0 6px 20px 0 rgba(194, 194, 194, 0.19);
+
+  transition: 0.3s;
 }
 
 .containerChild > a {
@@ -163,10 +173,10 @@ a > img:hover {
 .navBar {
   position: fixed;
   top: 0;
-  width: 94%;
+  width: 100%;
   margin-top: 0;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 0px;
+  margin-right: 0px;
   z-index: 2;
   color: #c1c1c1;
 }
@@ -216,12 +226,14 @@ a > img:hover {
   margin-left: 6px;
   margin-right: 6px;
   padding: 0;
+  transition: 0.3s;
 }
 .socialHeader {
   color: #5e7eb1;
 }
 .socials:hover {
   background-color: #5e7eb1;
+  transition: 0.3s;
 }
 
 #contact {
@@ -317,30 +329,36 @@ a > img:hover {
 .dark-mode {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
+  transition: 0.3s;
 }
 .dark-mode2 {
   border-color: white;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
 }
 .dark-mode2:hover {
   color: black;
   border-color: white;
   background-color: white;
   box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
 }
 .dark-mode3 {
   background-color: white;
+  transition: 0.3s;
 }
 .dark-mode3:hover {
   background-color: lightsteelblue;
+  transition: 0.3s;
 }
 .dark-mode4 {
   color: black;
 }
 
 .dark-mode5 {
-  background-color: rgba(176, 196, 222, 0.747);
+  background-color: rgb(176, 196, 222);
+  transition: 0.3s;
 }
 .dark-mode6 {
   color: #528cd6;
