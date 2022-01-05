@@ -35,6 +35,10 @@ li {
   float: left;
 }
 
+.underline:hover {
+  border-bottom: 2px solid #5e7eb1;
+  transition: 0.07s;
+}
 a:hover {
   color: #5e7eb1;
   transition: 0.3s;
@@ -75,23 +79,6 @@ a {
 a {
   position: relative;
 }
-.static {
-  position: absolute;
-  padding: 10px;
-  padding-right: 5px;
-  width: 100%;
-  height: 500px;
-  border-radius: 2%;
-  max-width: 95%;
-  max-height: 100%;
-  height: auto;
-  border-radius: 5%;
-  filter: brightness(0.8) contrast(1.2);
-  z-index: 1;
-}
-.static:hover {
-  opacity: 0;
-}
 .containerChild {
   background-color: #2f2f2f;
   border-radius: 10px;
@@ -118,6 +105,22 @@ a {
   margin-left: 3%;
   margin-right: 3%;
 }
+.static {
+  position: absolute;
+  padding: 10px;
+  padding-right: 5px;
+  width: 100%;
+  height: 500px;
+  border-radius: 2%;
+  max-width: 95%;
+  max-height: 100%;
+  height: auto;
+  border-radius: 5%;
+  z-index: 1;
+}
+.static:hover {
+  opacity: 0;
+}
 
 .active {
   padding: 10px;
@@ -129,7 +132,6 @@ a {
   max-height: 100%;
   height: auto;
   border-radius: 5%;
-  filter: brightness(0.8) contrast(1.2);
 }
 a > img:hover {
   cursor: pointer;
@@ -149,7 +151,7 @@ a > img:hover {
     color: rgba(255, 255, 255, 0);
   }
   100% {
-    color: rgb(255, 255, 255);
+    color: #c1c1c1;
   }
 }
 
@@ -309,6 +311,10 @@ a > img:hover {
 }
 
 @media only screen and (max-width: 810px) {
+  .profileDescs {
+    margin: 3%;
+    text-align: center;
+  }
   .li {
     float: none;
   }
