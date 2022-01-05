@@ -355,7 +355,7 @@ a > img:hover {
 /* dark mode classes */
 .dark-mode {
   background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  color: #1e2740;
   transition: 0.3s;
 }
 .dark-mode2 {
@@ -380,7 +380,7 @@ a > img:hover {
   transition: 0.3s;
 }
 .dark-mode4 {
-  color: black;
+  color: #1e2740;
 }
 
 .dark-mode5 {
