@@ -25,6 +25,10 @@ ul {
 }
 .home {
   width: 40px;
+  background-color: #c1c1c1;
+  border: 2px solid #c1c1c1;
+  border-radius: 5px;
+  padding: 0px;
 }
 li {
   padding-left: 20px;
@@ -195,7 +199,6 @@ a > img:hover {
     color: rgb(255, 0, 0);
   }
 }
-
 .navBar {
   position: fixed;
   top: 0;
@@ -206,6 +209,9 @@ a > img:hover {
   margin-bottom: 0px;
   z-index: 2;
   color: #c1c1c1;
+
+  padding-bottom: 6px;
+  padding-top: 8px;
 }
 
 #introduction {
@@ -261,6 +267,10 @@ a > img:hover {
 .socials:hover {
   background-color: #5e7eb1;
   transition: 0.3s;
+}
+.description {
+  margin: 5%;
+  text-align: justify;
 }
 
 #contact {
@@ -398,5 +408,6 @@ iframe {
   color: #528cd6;
 }
 .dark-mode7 {
-  filter: initial;
+  background-color: #b0c4de;
+  border-color: #b0c4de;
 }

@@ -30,9 +30,7 @@ function myFunction() {
   var socialHeader = document.getElementsByClassName("socialHeader");
   for (let i = 0; i < socialHeader.length; i++) {
     socialHeader[i].classList.toggle("dark-mode6");
-    var images = document.getElementsByTagName("img");
-    for (let i = 0; i < images.length; i++) {
-      images[i].classList.toggle("dark-mode7");
-    }
   }
+  var homeIcon = document.getElementById("home");
+  homeIcon.classList.toggle("dark-mode7");
 }
